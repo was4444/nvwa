@@ -34,7 +34,10 @@
  * @date  2015-09-20
  */
 
-#include "_nvwa.h"              // NVWA macros
+#include "nvwa/_nvwa.h"              // NVWA macros
+#include "nvwa/c++11.h"              // _NOEXCEPT/_NULLPTR
+#include "nvwa/fast_mutex.h"         // nvwa::fast_mutex
+#include "nvwa/static_assert.h"      // STATIC_ASSERT
 #include <new>                  // std::bad_alloc/nothrow_t
 #include <assert.h>             // assert
 #include <stdio.h>              // fprintf/stderr
@@ -46,9 +49,6 @@
 #ifdef _WIN32
 #include <malloc.h>             // alloca
 #endif
-#include "c++11.h"              // _NOEXCEPT/_NULLPTR
-#include "fast_mutex.h"         // nvwa::fast_mutex
-#include "static_assert.h"      // STATIC_ASSERT
 
 #if !_FAST_MUTEX_CHECK_INITIALIZATION && !defined(_NOTHREADS)
 #error "_FAST_MUTEX_CHECK_INITIALIZATION not set: check_leaks may not work"
@@ -195,7 +195,7 @@
  * is defined to \c 0 to disable the redefinition of \c new.
  */
 #define _DEBUG_NEW_REDEFINE_NEW 0
-#include "debug_new.h"
+#include "nvwa/debug_new.h"
 
 /**
  * Gets the aligned value of memory block size.

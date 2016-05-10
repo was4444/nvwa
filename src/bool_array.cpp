@@ -37,10 +37,10 @@
 #include <limits.h>             // UINT_MAX, ULONG_MAX
 #include <string.h>             // memset/memcpy
 #include <algorithm>            // std::swap
-#include "_nvwa.h"              // NVWA_NAMESPACE_*
-#include "bool_array.h"         // bool_array
-#include "c++11.h"              // _NULLPTR
-#include "static_assert.h"      // STATIC_ASSERT
+#include "nvwa/_nvwa.h"              // NVWA_NAMESPACE_*
+#include "nvwa/bool_array.h"         // bool_array
+#include "nvwa/c++11.h"              // _NULLPTR
+#include "nvwa/static_assert.h"      // STATIC_ASSERT
 
 NVWA_NAMESPACE_BEGIN
 

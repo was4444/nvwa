@@ -35,9 +35,9 @@
  */
 
 #include <algorithm>            // std::for_each
-#include "_nvwa.h"              // NVWA_NAMESPACE_*
-#include "cont_ptr_utils.h"     // nvwa::delete_object
-#include "static_mem_pool.h"    // nvwa::static_mem_pool_set
+#include "nvwa/_nvwa.h"              // NVWA_NAMESPACE_*
+#include "nvwa/cont_ptr_utils.h"     // nvwa::delete_object
+#include "nvwa/static_mem_pool.h"    // nvwa::static_mem_pool_set
 
 NVWA_NAMESPACE_BEGIN
 

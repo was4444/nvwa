@@ -40,8 +40,8 @@
 #include <new>                  // std::bad_alloc
 #endif
 
-#include "_nvwa.h"              // NVWA_NAMESPACE_*
-#include "mem_pool_base.h"      // nvwa::mem_pool_base
+#include "nvwa/_nvwa.h"              // NVWA_NAMESPACE_*
+#include "nvwa/mem_pool_base.h"      // nvwa::mem_pool_base
 
 NVWA_NAMESPACE_BEGIN
 
